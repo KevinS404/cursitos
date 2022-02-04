@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pagina Web</title>
+    <!-- con esto le estamos dando un borde muy fino a las etiquetas
+    de tabla, th y td-->
+    <style>
+        table, th, td {border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td> $1000</td>
+            </tr>
+            <tr>
+                <td>Producto con nombre muy largo para probar la tabla</td>
+                <td> $100000000</td>
+            </tr>
+        </tbody>
+        <tfooot>
+            <td></td>
+            <td>Total: </td>
+        </tfooot>
+    </table>
+    <!-- ul es una lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol es una lista ordenada-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Sublista:
+            <ol>
+                <li style="list-style-type: lower-roman">Sub elemento 1</li>
+                <li style="list-style-type: lower-roman">Sub elemento 2</li>
+                <li style="list-style-type: lower-roman">Sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="POST">
+        <!-- con el for le damos la identificadon id = nombre a label
+        entonces cuando presione por error fuera del campo, igualmente
+        sera direccionado al campo para escribir-->
+        <label for="nombre">Nombre:</label>
+        <!-- El tipo del campo es texto,aqui se le esta dando el id "nombre" al campo, despues se le da la llave "nombre"
+        asi como se agrega un placeholder para dar indicaciones-->
+        <input type="text" id="nombre" name="nombre" placeholder="Aqui se introducen los datos"/>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Aqui se introduce otro texto"/>
+        <br>
+        <label for="checkbox">Esto es una checbox:</label>
+        <input type="checkbox" name="checkbox"  />
+        <br>
+        <label for="pass">Para contraseñas:</label>
+        <input type = "password" name= "pass" placeholder="Escriba su contraseña"/>
+        <br>
+        <label for="nombre">Esto es un radio:</label>
+        <input type = "radio" name = "radio"/>
+        <br>
+        <label for="nombre">Para archivos:</label>
+        <input type="file" name = "archivos"/>
+        <br>
+        <label for="comentario">Comentario:</label>
+        <br>
+        <textarea cols = "30" rows= "10" id="comentario" name="comentario" placeholder="Esto es una caja de texto"></textarea>
+        <br>
+        <button type="button"> Este es un botón normal </button>
+        <button type="reset"> Este es un botón de reset</button>
+        <button type="submit"> Este es un botón de envio</button>
+    </form>
+    <h1 id = "titulo">Mi primer heading </h1>
+    <h2>Mi segundo heading </h2>
+    <!-- La etiqueta de hr genera una linea que funciona como separador-->
+    <hr>
+    <h3>Mi tercer heading </h3>
+    <p>
+        Este es un parrafo, aqui puede escribir lo que quieras que sea parte del contenido. 
+    <br><br>Aqui hay un salto de linea usando la etiqueta br.
+    </p>
+    <a target = "_blank" href="https://www.google.com">ESTO ES UN HIPERVINCULO</a>
+    <br>
+    <a href="mailto:usuario@ejemplo.com"> correo de contacto</a>
+    <br>
+    <!--las imagenes se agregan de esta manera o con el link de la imagen en internet-->
+    <img src= "images/totoro.jpg" height = "400" >
+    
+</body>
+</html>
